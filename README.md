@@ -1,5 +1,12 @@
-# My Internship
+# Internship Projects
 
-Hello! My name is Muqaddas.
+PHP and Laravel projects from my internship.
 
-I am learning web development and improving my programming skills. I am currently working on PHP and Laravel as part of my internship.
+> **Status:** Work in progress. Full documentation will be added in February 2027.
+
+## Technologies
+- PHP
+- Laravel
+
+## Author
+**Muqaddas Khizar** - [GitHub](https://github.com/muqaddas147)
