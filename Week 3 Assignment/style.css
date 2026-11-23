@@ -1,0 +1,399 @@
+
+/* GENERAL STYLING */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F8F7FC;
+    color: #514D63;
+    line-height: 1.7;
+}
+
+/* HEADER */
+
+header {
+    background-color: #252344;
+    color: white;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+header h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+header p {
+    font-size: 17px;
+    color: #E9E3F4;
+    margin-bottom: 5px;
+}
+
+/* NAVIGATION BAR*/
+
+nav {
+    background-color: #7666A8;
+    padding: 15px 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #E9E3F4;
+}
+
+/* MAIN */
+
+main {
+    max-width: 1100px;
+    width: 90%;
+    margin: 40px auto;
+}
+
+section {
+    background-color: #FFFFFF;
+    padding: 35px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(37, 35, 68, 0.07);
+}
+
+section h2 {
+    color: #252344;
+    font-size: 27px;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #7666A8;
+    padding-bottom: 10px;
+}
+
+section p {
+    margin-bottom: 15px;
+}
+
+/* ABOUT ME */
+
+#about {
+    text-align: center;
+}
+
+#about figure {
+    margin: 25px auto;
+}
+
+#about img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #E9E3F4;
+}
+
+#about figcaption {
+    color: #7666A8;
+    font-size: 14px;
+    margin-top: 8px;
+    font-style: italic;
+}
+
+#about p {
+    max-width: 750px;
+    margin: 20px auto 0;
+    text-align: justify;
+}
+
+/*GOALS AND INTERESTS - GRID */
+
+main {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+}
+
+#about,
+#timetable,
+#contact {
+    grid-column: 1 / -1;
+}
+
+#goals,
+#interests {
+    margin-bottom: 0;
+}
+
+#goals ol,
+#interests ul {
+    padding-left: 25px;
+}
+
+#goals li,
+#interests li {
+    margin-bottom: 12px;
+    padding-left: 5px;
+}
+
+#goals li::marker,
+#interests li::marker {
+    color: #7666A8;
+}
+
+/* TIMETABLE */
+
+#timetable {
+    overflow-x: auto;
+}
+
+#timetable table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    text-align: left;
+}
+
+#timetable caption {
+    color: #7666A8;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+#timetable th,
+#timetable td {
+    border: 1px solid #E9E3F4;
+    padding: 14px;
+}
+
+#timetable thead {
+    background-color: #252344;
+    color: #FFFFFF;
+}
+
+#timetable tbody th {
+    background-color: #E9E3F4;
+    color: #252344;
+}
+
+#timetable tbody tr:nth-child(even) {
+    background-color: #F8F7FC;
+}
+
+#timetable tbody tr:hover {
+    background-color: #E9E3F4;
+}
+
+/* CONTACT FORM */
+
+#contact form {
+    max-width: 650px;
+    margin: 25px auto;
+}
+
+#contact form p {
+    margin-bottom: 20px;
+}
+
+#contact label {
+    display: block;
+    font-weight: bold;
+    color: #252344;
+    margin-bottom: 7px;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #D8D2E6;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    outline: none;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+    border-color: #7666A8;
+    box-shadow: 0 0 5px rgba(118, 102, 168, 0.25);
+}
+
+#contact textarea {
+    resize: vertical;
+}
+
+#contact button {
+    background-color: #7666A8;
+    color: #FFFFFF;
+    padding: 13px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#contact button:hover {
+    background-color: #252344;
+}
+
+#contact > p:last-child {
+    text-align: center;
+}
+
+#contact > p:last-child a {
+    color: #7666A8;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#contact > p:last-child a:hover {
+    text-decoration: underline;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #252344;
+    color: #E9E3F4;
+    text-align: center;
+    padding: 25px 15px;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* .............RESPONSIVE DESIGN .................*/
+
+/* TABLETS AND SMALLER SCREENS */
+
+@media screen and (max-width: 768px) {
+
+    header {
+        padding: 50px 15px;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    nav ul {
+        gap: 18px;
+    }
+
+    main {
+        width: 92%;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    #about,
+    #timetable,
+    #contact {
+        grid-column: auto;
+    }
+
+    section {
+        padding: 25px;
+    }
+
+    section h2 {
+        font-size: 23px;
+    }
+
+    #timetable th,
+    #timetable td {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+/* MOBILE PHONES */
+
+@media screen and (max-width: 480px) {
+
+    header {
+        padding: 40px 15px;
+    }
+
+    header h1 {
+        font-size: 27px;
+    }
+
+    header p {
+        font-size: 14px;
+    }
+
+    nav {
+        padding: 15px 10px;
+    }
+
+    nav ul {
+        gap: 12px 18px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    main {
+        width: 94%;
+        margin: 20px auto;
+    }
+
+    section {
+        padding: 20px 16px;
+        margin-bottom: 20px;
+    }
+
+    section h2 {
+        font-size: 21px;
+    }
+
+    #about img {
+        width: 160px;
+        height: 160px;
+    }
+
+    #about p {
+        text-align: left;
+    }
+
+    #timetable th,
+    #timetable td {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    #contact button {
+        width: 100%;
+    }
+
+    footer {
+        padding: 20px 10px;
+    }
+}
